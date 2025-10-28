@@ -1,11 +1,11 @@
 # luckydev‑site
 
-[![SourceCode](https://img.shields.io/badge/SourceCode-luckydev--site-blue?style=flat-square&logo=github&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site)
-[![HTML5](https://img.shields.io/badge/HTML5-%3E%3D5-orange?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-%3E%3D3-blue?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![PHP](https://img.shields.io/badge/PHP-%3E%3D7-8892be?style=flat-square&logo=php&logoColor=white)](https://www.php.net/)
-[![License](https://img.shields.io/badge/License-PROPRIETARY-red?style=flat-square&logo=apache&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site/blob/main/LICENSE.md)
+[![SourceCode](https://img.shields.io/badge/SourceCode-luckydev--site-blue?style=flat&logo=github&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site)
+[![HTML5](https://img.shields.io/badge/HTML5-%3E%3D5-orange?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-%3E%3D3-blue?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![PHP](https://img.shields.io/badge/PHP-%3E%3D7-8892be?style=flat&logo=php&logoColor=white)](https://www.php.net/)
+[![License](https://img.shields.io/badge/License-PROPRIETARY-red?style=flat&logo=apache&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site/blob/main/LICENSE.md)
 
 Welcome to **Lucky’s Development Site** the home for all things development by Lucky (MrLuckyGamer).  
 This repository houses the codebase for the site located at [luckydev.xyz](https://luckydev.xyz).

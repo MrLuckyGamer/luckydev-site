@@ -1,7 +1,7 @@
 # Proprietary License
 
-[![SourceCode](https://img.shields.io/badge/SourceCode-luckydev--site-blue?style=flat-square&logo=github&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site)
-[![License](https://img.shields.io/badge/License-PROPRIETARY-red?style=flat-square&logo=apache&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site/blob/main/LICENSE.md)
+[![SourceCode](https://img.shields.io/badge/SourceCode-luckydev--site-blue?style=flat&logo=github&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site)
+[![License](https://img.shields.io/badge/License-PROPRIETARY-red?style=flat&logo=apache&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site/blob/main/LICENSE.md)
 
 Copyright (c) 2025 Lucky (MrLuckyGamer). All rights reserved.
 
