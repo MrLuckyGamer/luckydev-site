@@ -303,24 +303,37 @@
         });
     </script>
 
+    <canvas id="binaryCanvas" style="display:block; position:fixed; top:0; left:0; width:100%; height:100%;"></canvas>
+
     <script>
     const canvas = document.getElementById("binaryCanvas");
     const ctx = canvas.getContext("2d");
 
-    let width = canvas.width = window.innerWidth;
-    let height = canvas.height = window.innerHeight;
-
+    let width, height, columns, drops;
     const binary = "01";
     const fontSize = 20;
-    const columns = Math.floor(width / fontSize);
-    const drops = [];
+    let lastTime = 0;
+    const frameInterval = 50;
 
-    for (let x = 0; x < columns; x++) drops[x] = Math.random() * height;
+    function initCanvas() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        columns = Math.floor(width / fontSize);
+        drops = [];
+        for (let x = 0; x < columns; x++) {
+            drops[x] = Math.random() * height / fontSize;
+        }
+    }
 
-    function draw() {
+    function draw(timestamp) {
+        if (timestamp - lastTime < frameInterval) {
+            requestAnimationFrame(draw);
+            return;
+        }
+        lastTime = timestamp;
+
         ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
         ctx.fillRect(0, 0, width, height);
-
         ctx.font = fontSize + "px monospace";
 
         for (let i = 0; i < drops.length; i++) {
@@ -328,17 +341,19 @@
             const text = binary.charAt(Math.floor(Math.random() * binary.length));
             ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
-            if (drops[i] * fontSize > height && Math.random() > 0.975) drops[i] = 0;
+            if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                drops[i] = 0;
+            }
             drops[i]++;
         }
+
+        requestAnimationFrame(draw);
     }
 
-    setInterval(draw, 50);
+    window.addEventListener("resize", initCanvas);
 
-    window.addEventListener("resize", () => {
-        width = canvas.width = window.innerWidth;
-        height = canvas.height = window.innerHeight;
-    });
+    initCanvas();
+    requestAnimationFrame(draw);
     </script>
 
 </body>
