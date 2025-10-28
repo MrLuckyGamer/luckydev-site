@@ -202,22 +202,51 @@
         <p class="mb-5">Please fill out the form below to get in touch with me.</p>
         
 <!-- Contact Form -->
-<form action="send_message.php" method="POST">
+<form id="contactForm">
     <div class="row">
         <div class="col-md-6 mb-4">
-            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
         </div>
         <div class="col-md-6 mb-4">
-            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
         </div>
         <div class="col-12 mb-4">
-            <textarea class="form-control" name="message" placeholder="Your Message" rows="4" required></textarea>
+            <textarea class="form-control" id="message" placeholder="Your Message" rows="4" required></textarea>
         </div>
         <div class="col-12">
             <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
         </div>
     </div>
 </form>
+
+<div id="successAlert" class="alert alert-success mt-4 d-none" role="alert">
+    Thank you! Your email window has opened — please send your message from there.
+</div>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = encodeURIComponent(document.getElementById("name").value);
+        const email = encodeURIComponent(document.getElementById("email").value);
+        const message = encodeURIComponent(document.getElementById("message").value);
+
+        const subject = `New message from ${name}`;
+        const body = `From: ${name} (${email})%0D%0A%0D%0A${message}`;
+
+        const mailtoLink = `mailto:contactluckydevelopment@gmail.com?subject=${subject}&body=${body}`;
+
+        window.location.href = mailtoLink;
+
+        setTimeout(() => {
+            const alertBox = document.getElementById("successAlert");
+            alertBox.classList.remove("d-none");
+            alertBox.scrollIntoView({ behavior: "smooth" });
+        }, 800);
+
+        document.getElementById("contactForm").reset();
+    });
+</script>
 
 	    <br>
 	    <br>
