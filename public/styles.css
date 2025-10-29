@@ -101,7 +101,13 @@ header::before {
   z-index: 2;
 }
 
-.header-content h1, .header-content p {
+.header-content h1 {
+  font-size: 4rem;
+  text-shadow: 0 0 10px #007bff, 0 0 20px #007bff;
+}
+
+.header-content p {
+  font-size: 1.5rem;
   text-shadow: 0 0 10px #007bff, 0 0 20px #007bff;
 }
 
@@ -211,6 +217,64 @@ section {
 
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+/* Sponsored Bot Section */
+#sponsored-bot {
+    color: #fff;
+}
+
+#sponsored-bot h2.section-heading {
+    color: #fff;
+}
+
+#sponsored-bot h3,
+#sponsored-bot h3.text-primary {
+    color: #ff66b2 !important;
+    font-weight: 700;
+}
+
+#sponsored-bot ul li i {
+    color: #ff66b2 !important;
+    margin-right: 8px;
+}
+
+#sponsored-bot .btn-primary {
+    background-color: #ff66b2;
+    border-color: #ff66b2;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#sponsored-bot .btn-primary:hover {
+    background-color: #ff3385;
+    border-color: #ff3385;
+}
+
+#sponsored-bot .btn-outline-light {
+    border-color: #ff66b2;
+    color: #ff66b2;
+    transition: all 0.3s ease;
+}
+
+#sponsored-bot .btn-outline-light:hover {
+    background-color: #ff66b2;
+    color: #fff;
+}
+
+#sponsored-bot img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ff66b2;
+    box-shadow: 0 0 25px rgba(255, 102, 178, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sponsored-bot img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(255, 102, 178, 0.9);
 }
 
 /* Contact Section */
