@@ -21,20 +21,8 @@
       display: flex; align-items: center; justify-content: center;
       flex-direction: column;
       height: 100vh; overflow: hidden;
+      background: url('img/impbg.jpeg') no-repeat center center/cover;
     }
-
-    .bg-layer {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      opacity: 0;
-      transition: opacity 2s ease;
-      z-index: -1;
-    }
-    .bg-layer.active { opacity: 1; }
 
     .main-header {
       font-family: 'Orbitron', sans-serif;
@@ -136,7 +124,6 @@
 
     @keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
     @keyframes typing { from { width: 0; } to { width: 100%; } }
-    @keyframes blink { 50% { border-color: transparent; } }
 
     .header {
       text-align: center;
@@ -193,12 +180,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="bg-layer" style="background-image:url('img/impbg.jpeg')"></div>
-
   <div class="main-header">Sovereign Imperial</div>
-  <br>
-  <br>
-  <br>
+  <br><br><br>
 
   <div class="container">
     <div class="rules-panel">
@@ -246,21 +229,6 @@
       const percent = (done / window.totalFiles) * 100;
       fill.style.width = percent + '%';
     }
-
-    const backgrounds = document.querySelectorAll('.bg-layer');
-    let current = 0;
-
-    function changeBackground() {
-      let next;
-      do { next = Math.floor(Math.random() * backgrounds.length); } while (next === current);
-
-      backgrounds[current].classList.remove('active');
-      backgrounds[next].classList.add('active');
-      current = next;
-    }
-
-    backgrounds[current].classList.add('active');
-    setInterval(changeBackground, 8000);
   </script>
 </body>
 </html>
