@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Sovereign JvS | Loading</title>
+<style>
+
+html, body {
+  margin:0; padding:0;
+  height:100%; width:100%;
+  background:#000;
+  font-family:"Eurostile", "BankGothic", sans-serif;
+  overflow:hidden;
+  color:#d7c899;
+}
+
+#bg {
+  position:fixed; inset:0; z-index:0;
+  background:
+    linear-gradient(90deg, rgba(30,80,160,0.45), rgba(0,0,0,0.65) 50%, rgba(160,40,40,0.45)),
+    radial-gradient(circle at center, rgba(0,0,0,0) 0%, #000 70%);
+  background-blend-mode:overlay;
+}
+
+#bg::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background: url('https://i.redd.it/vcktzyfjxts31.png') center center / cover no-repeat;
+  opacity:0.22;
+}
+
+.faction-icon {
+  position:fixed; top:50%; width:300px; opacity:0.50;
+  transform:translateY(-50%);
+  filter:drop-shadow(0 0 22px rgba(255,255,255,0.08));
+}
+#jedi { left:4%; }
+#sith { right:4%; }
+
+#frame {
+  position:absolute;
+  top:50%; left:50%; transform:translate(-50%, -50%);
+  width:900px;
+  padding:36px 40px;
+  border:2px solid #8c6a2d;
+  border-radius:6px;
+  background:rgba(0,0,0,0.55);
+  box-shadow:0 0 42px rgba(255,204,80,0.2), inset 0 0 12px rgba(255,180,70,0.18);
+  z-index:5;
+}
+
+.corner {
+  position:absolute; width:46px; height:46px;
+  bottom:-10px;
+  border-bottom:3px solid #c39a4a;
+}
+#cL { left:-10px; border-left:3px solid #c39a4a; }
+#cR { right:-10px; border-right:3px solid #c39a4a; }
+
+#server-header {
+  position:fixed; top:120px; left:50%; transform:translateX(-50%);
+  font-size:80px; letter-spacing:3px;
+  color:#e7d49a;
+  text-shadow:0 0 10px #a07b32;
+  z-index:6;
+}
+
+#title {
+  text-align:center;
+  font-size:26px; margin-bottom:20px;
+  color:#e7d49a;
+  text-shadow:0 0 6px #a07b32;
+}
+
+#desc {
+  text-align:center;
+  font-size:15px;
+  color:#c7c4b3;
+  margin-bottom:32px;
+  text-shadow:0 0 4px #000;
+}
+
+.sep {
+  width:100%;
+  height:2px;
+  margin:24px 0;
+  background:linear-gradient(90deg, rgba(255,200,90,0) 0%, #c39a4a 45%, #c39a4a 55%, rgba(255,200,90,0) 100%);
+}
+
+#progress-wrap {
+  width:100%; height:28px;
+  border:2px solid #be9a54;
+  border-radius:3px;
+  background:#000000bb;
+  overflow:hidden;
+  position:relative;
+}
+#progress {
+  position:absolute; left:0; top:0; height:100%; width:0%;
+  background:linear-gradient(90deg, #4fa4ff, #7db8ff, #ffe7b0, #ffb46a, #a82f2f);
+  box-shadow:0 0 22px rgba(255,220,120,0.35);
+  transition:width 0.2s ease;
+}
+
+#percent { text-align:center; margin-top:14px; font-size:20px; }
+#tip { text-align:center; margin-top:16px; font-size:15px; color:#b8b39a; }
+
+</style>
+</head>
+<body>
+
+<div id="bg"></div>
+<img id="jedi" class="faction-icon" src="/loadingscreen/img/jedi.png" />
+<img id="sith" class="faction-icon" src="/loadingscreen/img/sith.png" />
+
+<div id="server-header">SOVEREIGN JEDI VS SITH</div>
+
+<div id="frame">
+  <div id="cL" class="corner"></div>
+  <div id="cR" class="corner"></div>
+
+  <div id="title">LOADING</div>
+  <div id="desc">Initialising Jedi archives, decrypting Sith holocrons, and preparing your session…</div>
+
+  <div class="sep"></div>
+
+  <div id="progress-wrap"><div id="progress"></div></div>
+  <div id="percent">0%</div>
+  <div id="tip">Connecting to server…</div>
+</div>
+
+<script>
+const bar = document.getElementById("progress");
+const percent = document.getElementById("percent");
+const tip = document.getElementById("tip");
+
+let totalFiles = 0;
+
+function SetStatusChanged(text) {
+  tip.textContent = text;
+}
+
+function SetFilesTotal(total) {
+  totalFiles = total;
+}
+
+function SetFilesNeeded(needed) {
+  if (!totalFiles) return;
+
+  const done = totalFiles - needed;
+  const pct = (done / totalFiles) * 100;
+
+  bar.style.width = pct + "%";
+  percent.textContent = Math.floor(pct) + "%";
+
+  if (pct >= 100) percent.textContent = "COMPLETE";
+}
+</script>
+
+</body>
+</html>
