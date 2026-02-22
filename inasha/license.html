@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inasha | License</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cyan: #4EDDDB;
+            --cyan-light: #7FEEED;
+            --cyan-dark: #2AB8B6;
+            --navy: #1A1F3A;
+            --navy-light: #2D3454;
+            --white: #FFFFFF;
+            --gray: #6C757D;
+            --light-gray: #F8F9FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: linear-gradient(135deg, #4EDDDB 0%, #7FEEED 100%);
+            color: var(--navy);
+            line-height: 1.6;
+        }
+
+        /* Animated background stars */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: var(--cyan);
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-family: 'Righteous', cursive;
+            font-size: 3rem;
+            color: var(--navy);
+            text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: var(--navy-light);
+            font-size: 1rem;
+        }
+
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(26, 31, 58, 0.15);
+            animation: slideUp 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-family: 'Righteous', cursive;
+            color: var(--cyan);
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--cyan-light);
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-family: 'Righteous', cursive;
+            color: var(--navy);
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--navy-light);
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--navy-light);
+        }
+
+        strong {
+            color: var(--navy);
+            font-weight: 700;
+        }
+
+        .highlight {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--cyan);
+            margin: 20px 0;
+        }
+
+        .license-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Custom cursor effect */
+        @media (pointer: fine) {
+            body {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="%234EDDDB" opacity="0.5"/></svg>') 12 12, auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background stars -->
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>License</h1>
+            <p class="last-updated">Last Updated: February 23, 2026</p>
+            <span class="license-badge">PROPRIETARY LICENSE</span>
+        </div>
+
+        <div class="content">
+            <div class="highlight">
+                <p><strong>Important Notice:</strong> Inasha is proprietary software. The source code is provided for transparency and reference purposes only. Unauthorised copying, modification, or redistribution is strictly prohibited.</p>
+            </div>
+
+            <h2>Inasha Discord Bot License</h2>
+            <p><strong>Copyright © 2026 Lucky. All rights reserved.</strong></p>
+
+            <div class="code-block">
+Inasha Discord Bot
+Copyright (c) 2026 Lucky
+All rights reserved.
+
+This software is PROPRIETARY.
+            </div>
+
+            <h2>Grant of License</h2>
+            <p>You are granted a limited, non-exclusive, non-transferable, revocable license to use the Inasha Discord Bot <strong>solely by inviting it to your Discord server or using its application commands</strong>.</p>
+            <p>This license permits you to:</p>
+            <ul>
+                <li>Invite and use the Inasha bot on your Discord server(s)</li>
+                <li>Interact with the bot through its provided commands and features</li>
+                <li>View the source code on GitHub for reference and transparency purposes</li>
+            </ul>
+
+            <h2>Restrictions</h2>
+            <div class="warning-box">
+                <p><strong>⚠️ You may NOT do any of the following:</strong></p>
+            </div>
+            <ul>
+                <li><strong>Copy:</strong> You may not copy, reproduce, or duplicate the source code or any portion thereof</li>
+                <li><strong>Modify:</strong> You may not modify, adapt, translate, or create derivative works based on the software</li>
+                <li><strong>Redistribute:</strong> You may not distribute, sublicense, sell, lease, rent, or transfer the software or any portion thereof</li>
+                <li><strong>Reverse Engineer:</strong> You may not reverse engineer, decompile, disassemble, or attempt to derive the source code except as provided on GitHub</li>
+                <li><strong>Host Yourself:</strong> You may not host your own instance of Inasha or deploy copies of the bot</li>
+                <li><strong>Remove Attribution:</strong> You may not remove or alter any copyright notices, trademarks, or other proprietary designations</li>
+                <li><strong>Commercial Use of Code:</strong> You may not use the source code for commercial purposes</li>
+                <li><strong>Claim Ownership:</strong> You may not claim authorship or ownership of Inasha or present it as your own work</li>
+            </ul>
+
+            <h2>Source Code Availability</h2>
+            <p>The source code for Inasha is available on GitHub at:</p>
+            <p><a href="https://github.com/MrLuckyGamer/inasha-discord-bot" style="color: var(--cyan); font-weight: 600;">github.com/MrLuckyGamer/inasha-discord-bot</a></p>
+            <p>This code is provided for:</p>
+            <ul>
+                <li><strong>Transparency:</strong> So users can understand how the bot works</li>
+                <li><strong>Security Review:</strong> To allow security researchers to verify the bot's safety</li>
+                <li><strong>Learning:</strong> For educational purposes only - understanding bot development concepts</li>
+                <li><strong>Bug Reports:</strong> To help identify and report issues</li>
+            </ul>
+            <p><strong>The availability of source code does NOT grant you permission to copy, modify, or redistribute it.</strong></p>
+
+            <h2>Intellectual Property Rights</h2>
+            <p>All rights, title, and interest in and to Inasha, including but not limited to:</p>
+            <ul>
+                <li>Source code and object code</li>
+                <li>Documentation and written materials</li>
+                <li>Graphics, artwork, and character designs</li>
+                <li>The "Inasha" name and branding</li>
+                <li>Associated trademarks and service marks</li>
+            </ul>
+            <p>...are and shall remain the exclusive property of Lucky.</p>
+
+            <h2>Third-Party Components</h2>
+            <p>Inasha uses the following third-party libraries, each subject to their own licenses:</p>
+            <ul>
+                <li><strong>discord.js (^14.15.3):</strong> Apache License 2.0</li>
+                <li><strong>Node.js:</strong> MIT License</li>
+            </ul>
+            <p>These third-party components retain their original licenses. This license applies only to the proprietary Inasha code, not to these open-source dependencies.</p>
+
+            <h2>No Warranty</h2>
+            <div class="code-block">
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES 
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND 
+NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION 
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN 
+THE SOFTWARE.
+            </div>
+
+            <h2>Limitation of Liability</h2>
+            <p>To the maximum extent permitted by applicable law, Lucky shall not be liable for any:</p>
+            <ul>
+                <li>Indirect, incidental, special, consequential, or punitive damages</li>
+                <li>Loss of profits, revenue, data, or use</li>
+                <li>Business interruption or server downtime</li>
+                <li>Damage caused by bugs, errors, or malfunctions</li>
+            </ul>
+            <p>...even if Lucky has been advised of the possibility of such damages.</p>
+
+            <h2>Termination</h2>
+            <p>This license is effective until terminated. Your rights under this license will terminate automatically without notice if you fail to comply with any of its terms.</p>
+            <p>Upon termination, you must:</p>
+            <ul>
+                <li>Cease all use of Inasha immediately</li>
+                <li>Remove the bot from all your Discord servers</li>
+                <li>Delete any copies of the source code you may have downloaded</li>
+            </ul>
+
+            <h2>Enforcement</h2>
+            <p>Violation of this license may result in:</p>
+            <ul>
+                <li>Immediate termination of your right to use Inasha</li>
+                <li>Blocking of your Discord servers from using the bot</li>
+                <li>Legal action to protect intellectual property rights</li>
+                <li>Reporting to Discord for Terms of Service violations</li>
+            </ul>
+
+            <h2>Contributions</h2>
+            <p>If you wish to contribute to Inasha:</p>
+            <ul>
+                <li>Bug reports and feature suggestions are welcome on GitHub</li>
+                <li>Any contributions you make may be incorporated at the discretion of the maintainer</li>
+                <li>By contributing, you agree that your contributions become the property of Lucky</li>
+                <li>You warrant that you have the right to make such contributions</li>
+            </ul>
+
+            <h2>Future Open Source</h2>
+            <p>Lucky reserves the right to change the license of Inasha in the future. However:</p>
+            <ul>
+                <li>This proprietary license governs the current version</li>
+                <li>Any license changes will be announced on GitHub and the support server</li>
+                <li>Past versions remain subject to the license under which they were released</li>
+            </ul>
+
+            <h2>Jurisdiction</h2>
+            <p>This license shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions. Any disputes arising from this license shall be resolved in the appropriate courts.</p>
+
+            <h2>Severability</h2>
+            <p>If any provision of this license is held to be invalid or unenforceable, the remaining provisions shall remain in full force and effect.</p>
+
+            <h2>Entire Agreement</h2>
+            <p>This license, together with the Terms of Service and Privacy Policy, constitutes the entire agreement between you and Lucky regarding the use of Inasha.</p>
+
+            <h2>Contact</h2>
+            <p>For licensing inquiries or permission requests, please contact:</p>
+            <ul>
+                <li><strong>GitHub:</strong> <a href="https://github.com/MrLuckyGamer/inasha-discord-bot" style="color: var(--cyan); font-weight: 600;">github.com/MrLuckyGamer/inasha-discord-bot</a></li>
+            </ul>
+
+            <div class="highlight" style="margin-top: 40px;">
+                <p><strong>Summary:</strong> Inasha is proprietary software. You can use it by inviting the bot to your server, but you cannot copy, modify, or redistribute the code. The source code is available on GitHub for transparency only, not for reuse.</p>
+            </div>
+
+            <div class="warning-box" style="margin-top: 20px;">
+                <p><strong>⚠️ Reminder:</strong> Unauthorised hosting, copying, or distribution of Inasha violates this license and may result in legal action. If you want a feature or modification, please request it through GitHub issues rather than attempting to modify the code yourself.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+    // Generate animated stars
+    const starsContainer = document.getElementById('stars');
+    const starCount = 50;
+
+    for (let i = 0; i < starCount; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+            
+        // Random positioning
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+            
+        // Random size
+        const size = Math.random() * 3 + 1;
+        star.style.width = size + 'px';
+        star.style.height = size + 'px';
+        star.style.borderRadius = '50%';
+            
+        // Random animation delay
+        star.style.animationDelay = Math.random() * 3 + 's';
+            
+        starsContainer.appendChild(star);
+    }
+    </script>
+</body>
+</html>

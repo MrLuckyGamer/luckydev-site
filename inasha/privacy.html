@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inasha | Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cyan: #4EDDDB;
+            --cyan-light: #7FEEED;
+            --cyan-dark: #2AB8B6;
+            --navy: #1A1F3A;
+            --navy-light: #2D3454;
+            --white: #FFFFFF;
+            --gray: #6C757D;
+            --light-gray: #F8F9FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: linear-gradient(135deg, #4EDDDB 0%, #7FEEED 100%);
+            color: var(--navy);
+            line-height: 1.6;
+        }
+
+        /* Animated background stars */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: var(--cyan);
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-family: 'Righteous', cursive;
+            font-size: 3rem;
+            color: var(--navy);
+            text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: var(--navy-light);
+            font-size: 1rem;
+        }
+
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(26, 31, 58, 0.15);
+            animation: slideUp 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-family: 'Righteous', cursive;
+            color: var(--cyan);
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--cyan-light);
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-family: 'Righteous', cursive;
+            color: var(--navy);
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--navy-light);
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--navy-light);
+        }
+
+        strong {
+            color: var(--navy);
+            font-weight: 700;
+        }
+
+        .highlight {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--cyan);
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        th {
+            background: var(--light-gray);
+            color: var(--navy);
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Custom cursor effect */
+        @media (pointer: fine) {
+            body {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="%234EDDDB" opacity="0.5"/></svg>') 12 12, auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background stars -->
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: February 23, 2026</p>
+        </div>
+
+        <div class="content">
+            <div class="highlight">
+                <p><strong>Your Privacy Matters:</strong> This Privacy Policy explains how Inasha collects, uses, stores, and protects your information when you use our Discord bot. We are committed to maintaining minimal data collection and protecting your privacy.</p>
+            </div>
+
+            <h2>1. Introduction</h2>
+            <p>Inasha ("we", "our", "the Bot") is a Discord bot that provides moderation, utility, and entertainment features for Discord servers. This Privacy Policy describes how we handle data when you use Inasha.</p>
+            <p>By using Inasha, you consent to the data practices described in this policy.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>Inasha collects minimal data necessary to provide its services. We collect information in the following categories:</p>
+
+            <h3>2.1 Automatically Collected Data</h3>
+            <p>When you use Inasha, we automatically collect:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Purpose</th>
+                        <th>Retention</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Server IDs</strong></td>
+                        <td>Identify which servers use the Bot, enable server-specific features</td>
+                        <td>While Bot is in server</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Channel IDs</strong></td>
+                        <td>Server statistics tracking, channel management features</td>
+                        <td>While feature is enabled</td>
+                    </tr>
+                    <tr>
+                        <td><strong>User IDs</strong></td>
+                        <td>Command execution, game features, moderation logging</td>
+                        <td>Temporary (command duration)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Server Member Counts</strong></td>
+                        <td>Display server statistics</td>
+                        <td>Real-time updates only</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Channel Counts</strong></td>
+                        <td>Display server statistics</td>
+                        <td>Real-time updates only</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>2.2 Command Usage Data</h3>
+            <p>When you interact with Inasha through commands:</p>
+            <ul>
+                <li><strong>Command Names:</strong> Which commands are being used (for analytics and improvement)</li>
+                <li><strong>Command Parameters:</strong> Only processed temporarily to execute the command</li>
+                <li><strong>Interaction Timestamps:</strong> When commands were executed (for rate limiting and abuse prevention)</li>
+            </ul>
+
+            <h3>2.3 Game and Fun Feature Data</h3>
+            <p>For certain features, we temporarily store:</p>
+            <ul>
+                <li><strong>Fish Leaderboard Data:</strong> User IDs and fish counts for the fishing game</li>
+                <li><strong>Game Results:</strong> Outcomes of commands like ship, family, gay, freaky (processed temporarily)</li>
+            </ul>
+            <p><strong>Note:</strong> This data is stored locally in memory or in simple JSON files and is never shared with third parties.</p>
+
+            <h3>2.4 Server Statistics Configuration</h3>
+            <p>If you enable server statistics tracking:</p>
+            <ul>
+                <li>Server ID and configured channel IDs for member and channel count displays</li>
+                <li>This data is stored in <code>serverstats.json</code> to maintain your configuration</li>
+            </ul>
+
+            <h2>3. Information We Do NOT Collect</h2>
+            <p>Inasha does not collect:</p>
+            <ul>
+                <li><strong>Message Content:</strong> We do not log or store the content of your messages (except when you directly invoke a command)</li>
+                <li><strong>Voice Data:</strong> We do not access or store voice communications</li>
+                <li><strong>Personal Information:</strong> We do not collect names, email addresses, phone numbers, or other personal identifiers beyond Discord User IDs</li>
+                <li><strong>Payment Information:</strong> Inasha is free and does not process any payment data</li>
+                <li><strong>Location Data:</strong> We do not collect or track your location</li>
+                <li><strong>Device Information:</strong> We do not collect information about your device</li>
+            </ul>
+
+            <h2>4. How We Use Your Information</h2>
+            <p>We use the collected data solely to:</p>
+            <ul>
+                <li><strong>Provide Bot Functionality:</strong> Execute commands, display server information, run games</li>
+                <li><strong>Maintain Server Statistics:</strong> Update member and channel count displays</li>
+                <li><strong>Improve the Bot:</strong> Understand which features are used to guide development</li>
+                <li><strong>Prevent Abuse:</strong> Implement rate limiting and detect malicious use</li>
+                <li><strong>Respond to Support Requests:</strong> Help troubleshoot issues when you contact us</li>
+            </ul>
+            <p>We do NOT use your data for:</p>
+            <ul>
+                <li>Marketing or advertising</li>
+                <li>Selling or sharing with third parties</li>
+                <li>Profiling or tracking across other services</li>
+            </ul>
+
+            <h2>5. Data Storage and Security</h2>
+
+            <h3>5.1 Where Data is Stored</h3>
+            <ul>
+                <li><strong>Server Configuration:</strong> Stored locally on our server in JSON files</li>
+                <li><strong>Temporary Data:</strong> Stored in memory during command execution and cleared afterward</li>
+                <li><strong>No Cloud Storage:</strong> We do not use external cloud databases for user data</li>
+            </ul>
+
+            <h3>5.2 Security Measures</h3>
+            <p>We implement reasonable security measures to protect data:</p>
+            <ul>
+                <li>Access to the Bot's server is restricted to authorised maintainers</li>
+                <li>Data files are stored with appropriate file system permissions</li>
+                <li>We use Discord's official API and follow their security best practices</li>
+                <li>No data is publicly accessible or shared with unauthorised parties</li>
+            </ul>
+
+            <h3>5.3 Data Retention</h3>
+            <ul>
+                <li><strong>Active Servers:</strong> Configuration data is retained while Inasha is in your server</li>
+                <li><strong>Removed Servers:</strong> When Inasha is removed from a server, associated data is deleted within 30 days</li>
+                <li><strong>Command Data:</strong> Processed in real-time and not permanently stored</li>
+                <li><strong>Logs:</strong> Basic error and system logs may be kept for up to 30 days for debugging purposes</li>
+            </ul>
+
+            <h2>6. Data Sharing and Third Parties</h2>
+            <p>We do NOT sell, trade, or share your data with third parties, except:</p>
+            <ul>
+                <li><strong>Discord:</strong> All data is processed through Discord's API as required for the Bot to function</li>
+                <li><strong>Legal Requirements:</strong> We may disclose data if required by law, court order, or government request</li>
+                <li><strong>Service Protection:</strong> We may share data to prevent fraud, abuse, or security threats</li>
+            </ul>
+            <p>Inasha does not use analytics services, advertising networks, or other third-party data processors.</p>
+
+            <h2>7. Discord's Role</h2>
+            <p>Inasha operates on Discord's platform and is subject to Discord's Privacy Policy. Discord may collect additional data about your use of their service and Inasha. Please review <a href="https://discord.com/privacy" style="color: var(--cyan); font-weight: 600;">Discord's Privacy Policy</a> for more information.</p>
+
+            <h2>8. Your Rights and Choices</h2>
+
+            <h3>8.1 Access and Deletion</h3>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Request Access:</strong> Ask what data we have collected about you</li>
+                <li><strong>Request Deletion:</strong> Ask us to delete your data</li>
+                <li><strong>Opt-Out:</strong> Stop using Inasha or remove it from your server at any time</li>
+            </ul>
+            <p>To exercise these rights, contact us through GitHub or our support server.</p>
+
+            <h3>8.2 Server Owner Controls</h3>
+            <p>If you own a Discord server with Inasha:</p>
+            <ul>
+                <li>You can remove the Bot at any time to stop data collection</li>
+                <li>You can disable specific features (like server statistics) using commands</li>
+                <li>You control which roles and users can access Bot commands through Discord permissions</li>
+            </ul>
+
+            <h2>9. Children's Privacy</h2>
+            <p>Inasha is not intended for children under 13 years of age (or the minimum age required in your country to use Discord). We do not knowingly collect data from children. If you believe a child has provided data to Inasha, please contact us immediately.</p>
+
+            <h2>10. International Users</h2>
+            <p>Inasha is hosted on servers that may be located in different countries. By using the Bot, you consent to the transfer and processing of your data in these locations.</p>
+
+            <h2>11. Automated Responses</h2>
+            <p>Inasha includes automatic response features (e.g., responding to "meow" or dog-related words). These responses are triggered by keyword detection in messages visible to the Bot. No message content is logged or stored - responses are generated in real-time.</p>
+
+            <h2>12. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. When we make changes:</p>
+            <ul>
+                <li>The "Last Updated" date will be revised</li>
+                <li>Significant changes will be announced in our support server</li>
+                <li>Continued use of Inasha constitutes acceptance of the updated policy</li>
+            </ul>
+            <p>We encourage you to review this Privacy Policy periodically.</p>
+
+            <h2>13. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or want to exercise your data rights, please contact us:</p>
+            <ul>
+                <li><strong>GitHub:</strong> <a href="https://github.com/MrLuckyGamer/inasha-discord-bot" style="color: var(--cyan); font-weight: 600;">github.com/MrLuckyGamer/inasha-discord-bot</a></li>
+                <li><strong>Support Server:</strong> Join our Discord support server for direct assistance</li>
+            </ul>
+
+            <h2>14. Data Breach Notification</h2>
+            <p>In the unlikely event of a data breach that affects your information, we will:</p>
+            <ul>
+                <li>Investigate the breach promptly</li>
+                <li>Notify affected users through our support server or GitHub</li>
+                <li>Take steps to prevent future breaches</li>
+                <li>Comply with applicable data breach notification laws</li>
+            </ul>
+
+            <div class="highlight" style="margin-top: 40px;">
+                <p><strong>Summary:</strong> Inasha collects minimal data (server IDs, user IDs for commands, and optional server statistics) solely to provide its features. We do not sell your data, track you across services, or collect personal information beyond what's necessary for the Bot to function. You can stop using Inasha at any time by removing it from your server.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+    // Generate animated stars
+    const starsContainer = document.getElementById('stars');
+    const starCount = 50;
+
+    for (let i = 0; i < starCount; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+            
+        // Random positioning
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+            
+        // Random size
+        const size = Math.random() * 3 + 1;
+        star.style.width = size + 'px';
+        star.style.height = size + 'px';
+        star.style.borderRadius = '50%';
+            
+        // Random animation delay
+        star.style.animationDelay = Math.random() * 3 + 's';
+            
+        starsContainer.appendChild(star);
+    }
+    </script>
+</body>
+</html>

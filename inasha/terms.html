@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inasha | Terms of Service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cyan: #4EDDDB;
+            --cyan-light: #7FEEED;
+            --cyan-dark: #2AB8B6;
+            --navy: #1A1F3A;
+            --navy-light: #2D3454;
+            --white: #FFFFFF;
+            --gray: #6C757D;
+            --light-gray: #F8F9FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: linear-gradient(135deg, #4EDDDB 0%, #7FEEED 100%);
+            color: var(--navy);
+            line-height: 1.6;
+        }
+
+        /* Animated background stars */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .star {
+            position: absolute;
+            background: white;
+            animation: twinkle 3s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .back-link {
+            display: inline-block;
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: white;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background: var(--cyan);
+            color: white;
+            transform: translateX(-5px);
+        }
+
+        h1 {
+            font-family: 'Righteous', cursive;
+            font-size: 3rem;
+            color: var(--navy);
+            text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: var(--navy-light);
+            font-size: 1rem;
+        }
+
+        .content {
+            background: white;
+            border-radius: 20px;
+            padding: 60px;
+            box-shadow: 0 20px 60px rgba(26, 31, 58, 0.15);
+            animation: slideUp 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-family: 'Righteous', cursive;
+            color: var(--cyan);
+            font-size: 1.8rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--cyan-light);
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-family: 'Righteous', cursive;
+            color: var(--navy);
+            font-size: 1.3rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--navy-light);
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: var(--navy-light);
+        }
+
+        strong {
+            color: var(--navy);
+            font-weight: 700;
+        }
+
+        .highlight {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid var(--cyan);
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Custom cursor effect */
+        @media (pointer: fine) {
+            body {
+                cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="%234EDDDB" opacity="0.5"/></svg>') 12 12, auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background stars -->
+    <div class="stars" id="stars"></div>
+
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>Terms of Service</h1>
+            <p class="last-updated">Last Updated: February 23, 2026</p>
+        </div>
+
+        <div class="content">
+            <div class="highlight">
+                <p><strong>Important:</strong> By inviting Inasha to your Discord server or using any of its commands and features, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use Inasha.</p>
+            </div>
+
+            <h2>1. Acceptance of Terms</h2>
+            <p>These Terms of Service govern your use of the Inasha Discord bot ("the Bot", "Inasha", "we", "our"). By adding Inasha to your Discord server or interacting with the Bot in any way, you acknowledge that you have read, understood, and agree to be bound by these terms.</p>
+
+            <h2>2. Description of Service</h2>
+            <p>Inasha is a multipurpose Discord bot that provides:</p>
+            <ul>
+                <li><strong>Moderation Tools:</strong> Commands to help manage your Discord server, including ban, kick, warn, lock/unlock channels, and message purging capabilities</li>
+                <li><strong>Utility Features:</strong> Server information, statistics tracking, user avatars, bot status, and automated server stats updates</li>
+                <li><strong>Fun & Entertainment:</strong> Interactive games, relationship simulators, fishing mechanics, and various entertainment commands</li>
+                <li><strong>Automatic Features:</strong> Auto-responses to certain triggers and periodic server statistics updates</li>
+            </ul>
+
+            <h2>3. User Responsibilities</h2>
+
+            <h3>3.1 Appropriate Use</h3>
+            <p>You agree to use Inasha in compliance with:</p>
+            <ul>
+                <li>Discord's Terms of Service and Community Guidelines</li>
+                <li>All applicable local, state, national, and international laws</li>
+                <li>These Terms of Service</li>
+            </ul>
+
+            <h3>3.2 Prohibited Activities</h3>
+            <p>You agree NOT to:</p>
+            <ul>
+                <li>Use the Bot to harass, abuse, threaten, or harm others</li>
+                <li>Attempt to reverse-engineer, decompile, or extract the source code of Inasha</li>
+                <li>Use the Bot to spam, flood, or disrupt Discord servers</li>
+                <li>Exploit bugs or vulnerabilities to gain unauthorised access or advantages</li>
+                <li>Impersonate the Bot's developers or claim ownership of Inasha</li>
+                <li>Use the Bot for any illegal purposes or to facilitate illegal activities</li>
+                <li>Attempt to overload or interfere with the Bot's infrastructure</li>
+            </ul>
+
+            <h3>3.3 Server Owner Responsibilities</h3>
+            <p>If you invite Inasha to your server, you are responsible for:</p>
+            <ul>
+                <li>Ensuring your server members understand and follow these Terms</li>
+                <li>Properly configuring the Bot's permissions and settings</li>
+                <li>Monitoring the Bot's use in your server</li>
+                <li>Maintaining compliance with Discord's server requirements</li>
+            </ul>
+
+            <h2>4. Moderation Features</h2>
+            <p>Inasha's moderation commands (ban, kick, warn, purge, lock/unlock) are powerful tools that should be used responsibly. By using these features, you acknowledge that:</p>
+            <ul>
+                <li>You are solely responsible for any moderation actions taken using the Bot</li>
+                <li>We are not liable for any misuse of moderation features</li>
+                <li>Moderation actions are logged by Discord and may be subject to Discord's review</li>
+                <li>You should ensure appropriate role permissions are set to prevent unauthorised use</li>
+            </ul>
+
+            <h2>5. Data Collection and Privacy</h2>
+            <p>For information about how we collect, use, and protect your data, please refer to our <a href="privacy.html" style="color: var(--cyan); font-weight: 600;">Privacy Policy</a>.</p>
+            <p>In summary, Inasha collects minimal data necessary for functionality, including:</p>
+            <ul>
+                <li>Server IDs and basic server information for statistics tracking</li>
+                <li>User IDs for command execution and game features</li>
+                <li>Message content only when directly interacting with commands</li>
+            </ul>
+
+            <h2>6. Availability and Support</h2>
+
+            <h3>6.1 Service Availability</h3>
+            <p>We strive to maintain 24/7 uptime for Inasha, but we do not guarantee uninterrupted service. The Bot may be unavailable due to:</p>
+            <ul>
+                <li>Scheduled maintenance and updates</li>
+                <li>Technical issues or server outages</li>
+                <li>Discord API limitations or downtime</li>
+                <li>Circumstances beyond our reasonable control</li>
+            </ul>
+
+            <h3>6.2 Support</h3>
+            <p>Support for Inasha is provided on a best-effort basis through our support server. We do not guarantee response times or resolution of issues.</p>
+
+            <h2>7. Changes to the Bot</h2>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Add, modify, or remove features at any time</li>
+                <li>Change command names, syntax, or functionality</li>
+                <li>Update the Bot's behavior and responses</li>
+                <li>Discontinue the Bot entirely with reasonable notice</li>
+            </ul>
+            <p>We will make reasonable efforts to notify users of significant changes through our support server or GitHub repository.</p>
+
+            <h2>8. Termination</h2>
+
+            <h3>8.1 Your Rights</h3>
+            <p>You may stop using Inasha at any time by removing the Bot from your server.</p>
+
+            <h3>8.2 Our Rights</h3>
+            <p>We reserve the right to:</p>
+            <ul>
+                <li>Terminate or suspend access to Inasha for any server or user</li>
+                <li>Block servers that violate these Terms or Discord's Terms of Service</li>
+                <li>Remove the Bot from servers without notice in cases of abuse or violation</li>
+            </ul>
+
+            <h2>9. Disclaimer of Warranties</h2>
+            <p>Inasha is provided "AS IS" and "AS AVAILABLE" without warranties of any kind, either express or implied, including but not limited to:</p>
+            <ul>
+                <li>Warranties of merchantability or fitness for a particular purpose</li>
+                <li>Guarantees of accuracy, reliability, or availability</li>
+                <li>Warranties that the Bot will be error-free or uninterrupted</li>
+            </ul>
+
+            <h2>10. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law:</p>
+            <ul>
+                <li>We shall not be liable for any indirect, incidental, special, consequential, or punitive damages</li>
+                <li>We shall not be liable for any loss of profits, data, or server access</li>
+                <li>Our total liability shall not exceed $0 (zero dollars)</li>
+                <li>You use Inasha at your own risk</li>
+            </ul>
+            <p>This limitation applies even if we have been advised of the possibility of such damages.</p>
+
+            <h2>11. Indemnification</h2>
+            <p>You agree to indemnify, defend, and hold harmless Inasha's developers, contributors, and affiliates from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:</p>
+            <ul>
+                <li>Your use or misuse of the Bot</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any rights of another person or entity</li>
+                <li>Your violation of Discord's Terms of Service</li>
+            </ul>
+
+            <h2>12. Intellectual Property</h2>
+            <p>Inasha and all associated materials, including but not limited to code, graphics, documentation, and branding, are proprietary and protected by copyright and other intellectual property laws. See our <a href="license.html" style="color: var(--cyan); font-weight: 600;">License</a> for more information.</p>
+            <p>You may NOT:</p>
+            <ul>
+                <li>Copy, modify, or redistribute the Bot's source code</li>
+                <li>Create derivative works based on Inasha</li>
+                <li>Use the Bot's name, logo, or branding without permission</li>
+            </ul>
+
+            <h2>13. Third-Party Services</h2>
+            <p>Inasha operates on Discord's platform and is subject to Discord's Terms of Service. We are not affiliated with, endorsed by, or sponsored by Discord Inc. Discord is a trademark of Discord Inc.</p>
+
+            <h2>14. Changes to Terms</h2>
+            <p>We reserve the right to modify these Terms of Service at any time. When we make changes:</p>
+            <ul>
+                <li>The "Last Updated" date will be revised</li>
+                <li>Significant changes will be announced in our support server</li>
+                <li>Continued use of Inasha constitutes acceptance of the updated terms</li>
+            </ul>
+            <p>It is your responsibility to review these Terms periodically.</p>
+
+            <h2>15. Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws applicable in your jurisdiction, without regard to conflict of law provisions.</p>
+
+            <h2>16. Severability</h2>
+            <p>If any provision of these Terms is found to be unenforceable or invalid, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
+
+            <h2>17. Entire Agreement</h2>
+            <p>These Terms of Service, together with our Privacy Policy and License, constitute the entire agreement between you and Inasha regarding your use of the Bot.</p>
+
+            <h2>18. Contact Information</h2>
+            <p>If you have questions about these Terms of Service, please contact us through:</p>
+            <ul>
+                <li><strong>GitHub:</strong> <a href="https://github.com/MrLuckyGamer/inasha-discord-bot" style="color: var(--cyan); font-weight: 600;">github.com/MrLuckyGamer/inasha-discord-bot</a></li>
+                <li><strong>Support Server:</strong> Join our Discord support server for assistance</li>
+            </ul>
+
+            <div class="highlight" style="margin-top: 40px;">
+                <p><strong>By using Inasha, you acknowledge that you have read and understood these Terms of Service and agree to be bound by them.</strong></p>
+            </div>
+        </div>
+    </div>
+    <script>
+    // Generate animated stars
+    const starsContainer = document.getElementById('stars');
+    const starCount = 50;
+
+    for (let i = 0; i < starCount; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+            
+        // Random positioning
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+            
+        // Random size
+        const size = Math.random() * 3 + 1;
+        star.style.width = size + 'px';
+        star.style.height = size + 'px';
+        star.style.borderRadius = '50%';
+            
+        // Random animation delay
+        star.style.animationDelay = Math.random() * 3 + 's';
+            
+        starsContainer.appendChild(star);
+    }
+    </script>
+</body>
+</html>
