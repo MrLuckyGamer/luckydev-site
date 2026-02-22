@@ -169,6 +169,31 @@
         .hero-content {
             position: relative;
             z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex-shrink: 0;
+            animation: floatSlow 4s ease-in-out infinite;
+        }
+
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(78, 221, 219, 0.3);
         }
 
         .hero h2 {
@@ -511,11 +536,16 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-content">
-                <h2>Enhance Your Discord Server</h2>
-                <p>Inasha is an all-purpose Discord bot designed to bring fun, utility, and powerful moderation to your community. With an intuitive command system and automatic features, Inasha makes managing and engaging with your server effortless.</p>
-                <a href="https://discord.com/oauth2/authorize?client_id=766211683684843550&permissions=8&scope=bot" class="cta-button" target="_blank">
-                    <span>✦ Invite Inasha to Your Server ✦</span>
-                </a>
+                <div class="hero-text">
+                    <h2>Enhance Your Discord Server</h2>
+                    <p>Inasha is an all-purpose Discord bot designed to bring fun, utility, and powerful moderation to your community. With an intuitive command system and automatic features, Inasha makes managing and engaging with your server effortless.</p>
+                    <a href="https://discord.com/oauth2/authorize?client_id=766211683684843550&permissions=8&scope=bot" class="cta-button" target="_blank">
+                        <span>✦ Invite Inasha to Your Server ✦</span>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <img src="inasha.png" alt="Inasha - Your Personal Assistant">
+                </div>
             </div>
         </section>
 
