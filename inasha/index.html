@@ -499,8 +499,28 @@
                 padding: 40px 30px;
             }
 
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .hero-image {
+                order: -1;
+                max-width: 280px;
+                margin: 0 auto;
+            }
+
             .hero h2 {
-                font-size: 2rem;
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 15px 35px;
+                font-size: 1.1rem;
             }
 
             .commands {
@@ -509,6 +529,33 @@
 
             .command-list {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo h1 {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
+
+            .hero {
+                padding: 30px 20px;
+            }
+
+            .hero-image {
+                max-width: 220px;
+            }
+
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
             }
         }
 
