@@ -3,7 +3,7 @@
 [![SourceCode](https://img.shields.io/badge/SourceCode-luckydev--site-blue?style=flat&logo=github&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site)
 [![License](https://img.shields.io/badge/License-PROPRIETARY-red?style=flat&logo=apache&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site/blob/main/LICENSE.md)
 
-Copyright (c) 2025 Lucky (MrLuckyGamer). All rights reserved.
+Copyright (c) 2026 Lucky (MrLuckyGamer). All rights reserved.
 
 This software and associated documentation files (the "Software") are the proprietary property of MrLuckyGamer.
 
