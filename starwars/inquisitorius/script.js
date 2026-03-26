@@ -59,9 +59,9 @@ class Inquisitor {
       <td class="inq_gender">${this.gender}</td>
       <td class="inq_died">${this.died}</td>
       <td class="inq_appearances">
-        
-          ${this.appearances.map(episode => `<li>${episode.html}</li><br>`).join("")}
-        
+        <ul>
+          ${this.appearances.map(episode => `<li>${episode.html}</li>`).join("")}
+        </ul>
       </td>
     `;
     return tr;
