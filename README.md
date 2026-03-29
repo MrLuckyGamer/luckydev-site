@@ -16,17 +16,16 @@ This project is built as a static site (HTML, CSS, JavaScript) to serve as a per
 ### Key Features  
 - Clean and minimal static site design.  
 - Easy to deploy (hosted via GitHub Pages, or any static host).  
-- Modular structure so you can add new pages/projects easily (see `public/`).  
+- Modular structure so you can add new pages/projects easily.  
 - Links to other projects, blog posts, development notes, and more.
 
 ## Repository Structure  
 ```
 /
 ├── index.html          # Home page
-├── public/             # Static files (HTML, CSS, JS, images, favicon, etc)
+├── assets/             # Static files (HTML, CSS, JS, images, favicon, etc)
 |    ├── images/        # Image directory
 |    ├── styles.css     # Style sheet
-|    └── …              # Other pages
 ├── favicon.ico         # Favicon for the site
 ├── LICENSE.md          # License
 └── README.md           # This file
