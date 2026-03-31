@@ -101,6 +101,12 @@ header::before {
   z-index: 2;
 }
 
+.header-content img {
+  width: 800px;
+  max-width: 90vw;
+  height: auto;
+}
+
 .header-content h1 {
   font-size: 4rem;
   text-shadow: 0 0 10px #007bff, 0 0 20px #007bff;
