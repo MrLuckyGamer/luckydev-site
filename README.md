@@ -8,7 +8,7 @@
 [![License](https://img.shields.io/badge/License-PROPRIETARY-red?style=flat&logo=apache&logoColor=white)](https://github.com/MrLuckyGamer/luckydev-site/blob/main/LICENSE.md)
 
 Welcome to **Lucky’s Development Site** the home for all things development by Lucky (MrLuckyGamer).  
-This repository houses the codebase for the site located at [luckydev.xyz](https://luckydev.xyz).
+This repository houses the codebase for the site located at [old.luckydev.xyz](https://old.luckydev.xyz).
 
 ## Project Overview  
 This project is built as a static site (HTML, CSS, JavaScript) to serve as a personal development portal, showcase, and hub for side‑projects.

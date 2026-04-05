@@ -84,7 +84,7 @@
 
   function init() {
     nekoEl.id = "neko";
-    // nekoEl.onclick = function(){window.open("https://luckydev.xyz/neko/neko.js", '_blank').focus()}
+    // nekoEl.onclick = function(){window.open("https://old.luckydev.xyz/neko/neko.js", '_blank').focus()}
     nekoEl.ariaHidden = true;
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
@@ -94,7 +94,7 @@
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = 2147483647;
 
-    let nekoFile = "https://luckydev.xyz/neko/neko.gif"
+    let nekoFile = "https://old.luckydev.xyz/neko/neko.gif"
     const curScript = document.currentScript
     if (curScript && curScript.dataset.cat) {
       nekoFile = curScript.dataset.cat

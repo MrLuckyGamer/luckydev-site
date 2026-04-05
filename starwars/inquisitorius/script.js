@@ -1,7 +1,7 @@
 //  /////////////////////////////////////////////////////////////////////////////////////////////////
 
 //    Copyright (c) 2024 - 2026 - Lucky :: Special for Lucky Developments.
-//    https://luckydev.xyz/
+//    https://old.luckydev.xyz/
     
 //    Title: Personal Development Website for use by Lucky
 //    Format: HTML5 + JS
