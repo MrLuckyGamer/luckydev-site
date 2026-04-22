@@ -134,18 +134,6 @@ const inquisitors = [
       ]
     }),
     new Inquisitor({
-      name: "3rd Brother?",
-      note: "",
-      img: "",
-      img_w: "Unknown",
-      img_pos: {},
-      lightsaber_img: "",
-      species: "Unknown",
-      gender: "Male",
-      died: "Unknown",
-      appearances: []
-    }),
-    new Inquisitor({
       name: "4th Sister",
       note: "(Lyn Rakish)",
       img: "4th.png",
@@ -354,6 +342,18 @@ const inquisitors = [
       appearances: [
         new Episode({ type: "mobile game", title: "Star Wars: Uprising", note: " (Mentioned only)" }),
       ]
+    }),
+    new Inquisitor({
+      name: "3rd Brother?",
+      note: "",
+      img: "",
+      img_w: "Unknown",
+      img_pos: {},
+      lightsaber_img: "",
+      species: "Unknown",
+      gender: "Male",
+      died: "Unknown",
+      appearances: []
     }),
   ];
 
