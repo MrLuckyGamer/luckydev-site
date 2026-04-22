@@ -248,7 +248,7 @@ const inquisitors = [
       lightsaber_img: "11th_l.png",
       species: "Unknown",
       gender: "Male",
-      died: "Imperial era",
+      died: "Between 18 BBY and 5 BBY",
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Jedi" }),
@@ -292,7 +292,7 @@ const inquisitors = [
       img_pos: { top: 30, left: -20 },
       species: "Mirialan",
       gender: "Female",
-      died: "Unknown",
+      died: "Between 9 BBY and 0 ABY",
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
       ]
@@ -310,7 +310,7 @@ const inquisitors = [
       lightsaber_img: "",
       species: "Unknown",
       gender: "Male",
-      died: "Imperial era",
+      died: "During or after 18 BBY",
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Underworld" }),
       ]
@@ -324,7 +324,7 @@ const inquisitors = [
       lightsaber_img: "Jerserra_l.png",
       species: "Unknown",
       gender: "Female",
-      died: "Dathomir, Imperial era",
+      died: "Between 18 BBY and 5 ABY, Dathomir",
       appearances: [
         new Episode({ type: "FFG adventure book", title: "Ghosts of Dathomir", note: " (Mentioned only)" }),
       ]
@@ -394,7 +394,7 @@ const inquisitors = [
       lightsaber_img: "visions2_l.png",
       species: "Unknown",
       gender: "Male",
-      died: "Imperial Era, Golak",
+      died: "Between 18 BBY and 3 BBY, Golak",
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Visions The Bandits of Golak" }),
       ]
