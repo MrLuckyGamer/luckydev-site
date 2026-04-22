@@ -100,6 +100,7 @@ const inquisitors = [
       died: "9 ABY, Seatos",
       appearances: [
         new Episode({ type: "animated-series", title: "Star Wars: Tales of the Empire" }),
+        new Episode({ type: "animated-series", title: "Star Wars: Maul" }),
         new Episode({ type: "live-action", title: "Ahsoka" }),
       ]
     }),
