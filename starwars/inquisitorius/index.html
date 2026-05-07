@@ -1,7 +1,7 @@
 <!--/////////////////////////////////////////////////////////////////////////////////////////////////
 
     Copyright (c) 2024 - 2026 - Lucky :: Special for Lucky Developments.
-    https://old.luckydev.xyz/
+    https://luckydev.xyz/
     
     Title: Personal Development Website for use by Lucky
     Format: HTML5 + JS + CSS
@@ -128,6 +128,154 @@
       color: #fff;
       padding: 10px 0;
     }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+
+      section#main {
+        width: 94%;
+        padding: 14px;
+        border-radius: 6px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+      }
+      .header h1 {
+        font-size: 22px;
+        line-height: 1.25;
+        padding-right: 0;
+        align-self: center;
+      }
+      .header img {
+        position: static;
+        transform: none;
+        max-height: 200px;
+        margin-top: 10px;
+        align-self: center;
+      }
+
+      h2 {
+        font-size: 18px;
+        margin-top: 24px;
+      }
+
+      table,
+      thead,
+      tbody,
+      tfoot,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tbody tr {
+        background: #fff;
+        border: 1px solid #bbb;
+        border-radius: 6px;
+        margin-bottom: 14px;
+        padding: 10px 12px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      }
+      tbody tr:last-child {
+        border-bottom: 1px solid #bbb;
+      }
+
+      td {
+        border: none;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 7px 4px;
+        font-size: 14px;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      td:last-child {
+        border-bottom: none;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: 700;
+        min-width: 90px;
+        flex-shrink: 0;
+        color: #444;
+        font-size: 13px;
+        padding-top: 1px;
+      }
+
+      td.inq_img,
+      td.inq_saber {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      td.inq_img::before,
+      td.inq_saber::before {
+        min-width: unset;
+        text-align: center;
+      }
+
+      td.inq_img img {
+        max-width: 140px !important;
+        width: auto !important;
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        z-index: auto !important;
+      }
+      td.inq_saber img {
+        max-width: 110px;
+      }
+
+      td.inq_appearances ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      td.inq_appearances li {
+        margin-bottom: 3px;
+        line-height: 1.4;
+      }
+
+      td.inq_name {
+        font-size: 15px;
+        font-weight: 600;
+      }
+      td.inq_name div {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 13px;
+      }
+
+      table {
+        table-layout: auto;
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      section#main {
+        width: 97%;
+        padding: 10px;
+      }
+      .header h1 {
+        font-size: 19px;
+      }
+    }
   </style> 
 
   <script src="./script.js" defer></script>
@@ -137,7 +285,7 @@
   <section id="main">
     <div class="header">
       <h1>List of Imperial Inquisitors</h1>
-      <img src="https://i.imgur.com/XTBvgGR.png" alt="Logo">
+      <img src="./img/inq_logo.png" alt="Logo">
     </div>
     <p>Updated on 22/04/2026</p>
     <div id="contents">

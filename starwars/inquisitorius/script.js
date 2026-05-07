@@ -1,7 +1,7 @@
 //  /////////////////////////////////////////////////////////////////////////////////////////////////
 
 //    Copyright (c) 2024 - 2026 - Lucky :: Special for Lucky Developments.
-//    https://old.luckydev.xyz/
+//    https://luckydev.xyz/
     
 //    Title: Personal Development Website for use by Lucky
 //    Format: HTML5 + JS
@@ -52,13 +52,13 @@ class Inquisitor {
 
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td class="inq_name">${this.name}${this.note ? `<div>${this.note}</div>` : ""}</td>
-      <td class="inq_img">${img_html}</td>
-      <td class="inq_saber">${saber_html}</td>
-      <td class="inq_species">${this.species}</td>
-      <td class="inq_gender">${this.gender}</td>
-      <td class="inq_died">${this.died}</td>
-      <td class="inq_appearances">
+      <td class="inq_name" data-label="Name">${this.name}${this.note ? `<div>${this.note}</div>` : ""}</td>
+      <td class="inq_img" data-label="Image">${img_html}</td>
+      <td class="inq_saber" data-label="Lightsaber">${saber_html}</td>
+      <td class="inq_species" data-label="Species">${this.species}</td>
+      <td class="inq_gender" data-label="Gender">${this.gender}</td>
+      <td class="inq_died" data-label="Died">${this.died}</td>
+      <td class="inq_appearances" data-label="Appearances">
         <ul>
           ${this.appearances.map(episode => `<li>${episode.html}</li>`).join("")}
         </ul>
